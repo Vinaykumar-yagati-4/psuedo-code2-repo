@@ -1,0 +1,14 @@
+START
+READ num
+SET original = num
+SET revNum = 0
+WHILE num > 0
+  SET digit = num % 10
+  SET revNum = revNum * 10 + digit
+  num = num / 10
+ENDWHILE
+IF original = revNum
+PRINT "Palindrome"
+ELSE
+PRINT "Not palindrome"
+END
