@@ -15,19 +15,3 @@ END
 
 
 
-ARMSTRONG NUMBER :
-
-START 
-READ num
-SET sum = 0
-WHILE num > 0
-  SET digit = num % 10
-  SET sum = sum + digit ^ digit
-  num =num / 10
-ENDWHILE
-IF sum == digit
-PRINT "Palindrome"
-ELSE
-PRINT "Not Palindrome"
-END
-
